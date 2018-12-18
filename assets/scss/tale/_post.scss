@@ -29,7 +29,6 @@
 
   p {
     margin: 0 0 1rem;
-    text-align: justify;
   }
 
   a:hover {
@@ -59,5 +58,12 @@
     vertical-align: text-top;
     padding: 0;
     margin: 0;
+  }
+
+  hr {
+    margin:2.4rem auto;
+    border:1px solid #ddd;
+    border-width:1px 0 0 0;
+    position: relative;
   }
 }

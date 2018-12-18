@@ -12,14 +12,17 @@ code {
 }
 
 pre {
-  margin: 0 0 1rem;
+  margin: 2em 0;
+  overflow: auto;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1.5em 2em;
 }
 
 pre code {
   background-color: transparent;
   color: inherit;
   font-size: 100%;
-  padding: 0;
 }
 
 .highlight {
