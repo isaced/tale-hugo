@@ -4,9 +4,10 @@
 	{{ partial "index/introduction.html" . }}
 
 	<div class="catalogue">
-		{{ range (.Paginate .Pages).Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
+    {{ $paginator := .Paginate (where .Pages "Params.hidden" "!=" true) }}
+    {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
+    {{ end }}
 	</div>
 	
 	{{- template "_internal/pagination.html" . -}}
