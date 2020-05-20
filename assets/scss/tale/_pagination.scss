@@ -1,44 +1,31 @@
 .pagination {
-  border-top: .5px solid $grey-2;
-  font-family: $serif-secondary;
-  padding-top: 2rem;
-  position: relative;
+  margin: 3rem 0;
   text-align: center;
+}
 
-  span {
-    color: $default-shade;
-    font-size: 1.1rem;
-  }
+.pagination li {
+  display: inline-block;
+  margin-right: 0.375rem;
+  font-size: 0.875rem;
+  margin-bottom: 2.5em;
+}
+.pagination li a {
+  padding: 0.5rem 0.625rem;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.pagination li.disabled {
+  display: none;
+}
+.pagination li.active a:link,
+.pagination li.active a:active,
+.pagination li.active a:visited {
+  background-color: #ddd;
+}
 
-  .top {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    font-family: $sans-serif;
-    font-size: 1.1rem;
-    opacity: .6;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  .arrow {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    position: absolute;
-
-    &:hover,
-    &:focus {
-      opacity: .6;
-      text-decoration: none;
-    }
-  }
-
-  .left {
-    left: 0;
-  }
-
-  .right {
-    right: 0;
-  }
+#TableOfContents ul li {
+  margin-bottom: 1em;
 }
